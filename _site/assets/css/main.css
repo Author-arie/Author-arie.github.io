@@ -208,8 +208,17 @@ header .site-title {
   font-size: 1rem;
 }
 
-.ps {
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+@media (max-width: 768px) {
+  .article {
+    width: 95%; 
+    padding: 1.5rem; 
+    margin: 1rem 0;
+  }
+  .site-nav a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fff;
+}
 }
 
 .site-nav {
