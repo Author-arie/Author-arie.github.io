@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>(页面标题)</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/about.css">
+</head>
+<body>
+  <div class="fixed-background"></div>
+  <div class="about-page">
+    <div class="about-header">
+      <img src="/assets/images/avatar.jpg" class="about-avatar">
+      <h1 class="about-title">关于我👑</h1> 
+    </div>
+      <nav class="site-nav">
+  <ul>
+    <li><a href="/" >首页</a></li>
+    <li><a href="/about" class="active">关于</a></li>
+    <li><a href="/archive" >文章</a></li>
+    <li><a href="/pictures" >画廊</a></li>
+  </ul>
+</nav>
+
+<!-- 页面名称标为栏目xx，使用时页面跳转链接记得修改⚠️ -->
+
+      <div class="content-container">
+        <div class="about-content">
+          <p>这里写你的自我介绍，关于你的一些个人信息</p>
+
+        </div>
+        <h2>评论区</h2>
+<div id="vcomments"></div>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'it55DzxX1q0dJJ3x27Ietfhq-gzGzoHsz',
+            appKey: '0voRk494pOPc2N4hBNvAtgIa',
+            placeholder: '来说两句吧（ps：上方填写昵称即可评论哦～）',
+            avatar: 'mp'
+        })
+    </script>
+      </div>
+  <footer>
+  <p>&copy; 2025 | Arie </p>
+
+</footer>
+
+    <!-- ✅ 放这里：MathJax 配置 + 加载脚本 -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>

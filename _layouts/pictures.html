@@ -1,0 +1,30 @@
+---
+layout: pictures
+---
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/pictures.css' | relative_url }}">
+    </head>
+    <body>
+    <div class="fixed-background"></div>
+    <div class="pictures-page">
+        <div class="pictures-header">
+        <img src="{{ '/assets/images/avatar.jpg' | relative_url }}" class="pictures-avatar">
+        <h1 class="pictures-title">更多🚀</h1> 
+        </div>
+        {% include navigation.html %}
+        <div class="gallery-container">
+            {% for item in site.data.gallery %}
+            <figure class="gallery-item">
+            <img src="{{ item.image_path | relative_url }}" alt="{{ item.alt }}">
+            </figure>
+            {% endfor %}
+        </div>
+    {% include footer.html %}
+    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    </body>
+</html>

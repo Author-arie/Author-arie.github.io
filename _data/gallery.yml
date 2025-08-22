@@ -1,0 +1,15 @@
+- image_path: /assets/images/gallery/image1.jpg
+  alt: 图片xxxx描述1
+  caption: xxx
+
+- image_path: /assets/images/gallery/image2.jpg
+  alt: xxxx
+  caption: xxx
+
+- image_path: /assets/images/gallery/image3.jpg
+  alt: xxxx
+  caption: xxx
+
+- image_path: /assets/images/gallery/image4.jpg
+  alt: xxxx
+  caption: xxx

@@ -1,0 +1,46 @@
+title: Arie's Site
+markdown: kramdown
+url: ""
+
+
+# for atom feed
+author:
+  name: Arie
+  email: 3315505425@qq.com
+
+plugins:
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-archives
+
+collections_dir: all_collections
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      permalink: /posts/:title/
+exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
+
+
+
+baseurl: ""
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+jekyll-archives:
+  enabled:
+    - categories 
+  layouts:
+    categories: 'category-archive'
+  permalinks:
+    category: '/category/:name/' 
